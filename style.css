@@ -128,13 +128,4 @@ ul li span:hover
     background: #edeef0;
 }
 
-#moon img
-{
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    margin: 0px 0px 20px 220px;
-}
-
 
