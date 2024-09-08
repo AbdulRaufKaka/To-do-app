@@ -26,6 +26,7 @@
 
 .To-Do-App h2
 {
+    font-size: 2.5rem;
     color: #002765;
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@
 
 .row input
 {
-    /* flex: 1; */
+    flex: 1;
     border: none;
     outline: none;
     background: transparent;
@@ -128,339 +129,48 @@ ul li span:hover
     background: #edeef0;
 }
 
-/* Media queries with a max width 768 tablets and smaller */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'sans-serif';
-    box-sizing: border-box;
-}
+@media (max-width:600px)
+{
 
-.container {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#4e085f);
-    padding: 10px;
-}
-
-.To-Do-App {
-    width: 100%; 
-    max-width: 540px;
-    background: white;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 15px;
-}
-
-.To-Do-App h2 {
-    color: #002765;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-decoration: underline;
-}
-
-.To-Do-App h2 img {
-    width: 70px;
-    margin-left: 10px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-
-.row input {
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    font-size: large;
-    flex: 1;
-}
-
-#btn {
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background-color: #ff5945;
-    cursor: pointer;
-    border-radius: 50px;
-    color: white;
-    font-size: 16px;
-}
-
-ul li {
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-}
-
-ul li::before {
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(images/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
-}
-
-ul li.checked {
-    color: #555;
-    text-decoration: line-through;
-}
-
-ul li.checked::before {
-    background-image: url(images/checked.png);
-}
-
-ul li span {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
-    color: red;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-ul li span:hover {
-    background: #edeef0;
-}
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'sans-serif';
-    box-sizing: border-box;
-}
-
-.container {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#4e085f);
-    padding: 10px;
-}
-
-.To-Do-App {
-    width: 100%; 
-    max-width: 540px;
-    background: white;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 15px;
-}
-
-.To-Do-App h2 {
-    color: #002765;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-decoration: underline;
-}
-
-.To-Do-App h2 img {
-    width: 70px;
-    margin-left: 10px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-
-.row input {
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    font-size: large;
-    flex: 1;
-}
-
-#btn {
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background-color: #ff5945;
-    cursor: pointer;
-    border-radius: 50px;
-    color: white;
-    font-size: 16px;
-}
-
-ul li {
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-}
-
-ul li::before {
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(images/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
-}
-
-ul li.checked {
-    color: #555;
-    text-decoration: line-through;
-}
-
-ul li.checked::before {
-    background-image: url(images/checked.png);
-}
-
-ul li span {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
-    color: red;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-ul li span:hover {
-    background: #edeef0;
-}
-
-/* --- Media Queries for Responsiveness --- */
-
-/* For devices with a max width of 768px (tablets and smaller) */
-@media (max-width: 768px) {
-    .To-Do-App {
-        padding: 30px 20px 50px; /* Adjust padding for smaller screens */
-        margin: 50px auto 20px; /* Less top margin */
+    .To-Do-App h2
+    {
+        font-size: 1.8rem;
     }
+    .row{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    #btn{
+        width: 100%;
+        font-size: 20px;
+    }
+    #input-box{
+        text-align: center;
+    }
+}
 
+@media (max-width:775px) {
+    .To-Do-App{
+        width: 100%;
+    }
+}
+
+@media(max-width:400px)
+{
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width:300px) {
     .To-Do-App h2 {
-        font-size: 22px; /* Smaller font for title */
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        flex-direction: column;
     }
-
-    .row {
-        flex-direction: column; /* Stack input and button vertically */
-        padding-left: 10px;
-        margin-bottom: 15px;
-    }
-
-    #btn {
-        width: 100%; /* Button takes full width on small screens */
-        padding: 12px;
-        margin-top: 10px;
-    }
-
-    ul li {
-        padding: 10px 8px 10px 40px; /* Adjust padding for list items */
-    }
-}
-
-/* For devices with a max width of 480px (mobile devices) */
-@media (max-width: 480px) {
-    .To-Do-App {
-        max-width: 100%; /* Full width on mobile */
-        padding: 20px 15px 40px;
-        margin: 20px auto;
-    }
-
-    .To-Do-App h2 {
-        font-size: 20px; /* Smaller title */
-    }
-
-    .row input {
-        font-size: medium; /* Smaller input text */
-    }
-
-    ul li {
-        font-size: 15px; /* Smaller list items */
-        padding: 8px 5px 8px 35px;
-    }
-
-    ul li span {
-        font-size: 30px; /* Smaller delete icon */
-    }
-}
-
-/* --- Height-Based Media Queries --- */
-
-/* For devices with a max height of 700px (height-constrained screens) */
-@media (max-height: 700px) {
-    .To-Do-App {
-        margin: 50px auto 10px; /* Adjust margin for shorter heights */
-    }
-
-    .To-Do-App h2 {
-        font-size: 18px; /* Smaller heading for short heights */
-    }
-
-    .row {
-        margin-bottom: 15px;
-    }
-
-    #btn {
-        padding: 10px 30px; /* Smaller button for short screens */
-    }
-
-    ul li {
-        font-size: 14px;
-        padding: 10px 5px 10px 40px;
-    }
-}
-
-/* For devices with a max height of 500px (very short screens) */
-@media (max-height: 500px) {
-    .To-Do-App {
-        margin: 30px auto 5px; /* Less margin for very short screens */
-        padding: 20px 10px 30px;
-    }
-
-    .To-Do-App h2 {
-        font-size: 16px;
-    }
-
-    .row {
-        margin-bottom: 10px;
-    }
-
-    #btn {
-        padding: 8px 20px;
-    }
-
-    ul li {
-        font-size: 12px;
-        padding: 8px 5px 8px 35px;
+    .To-Do-App h2 img {
+        width: auto;
+        height: auto;
     }
 }
